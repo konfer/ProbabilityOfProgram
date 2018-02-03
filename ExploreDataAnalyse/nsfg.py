@@ -9,9 +9,7 @@ from __future__ import print_function, division
 
 import sys
 import numpy as np
-import thinkstats2
-
-from collections import defaultdict
+import ExploreDataAnalyse.thinkstats2 as thinkstats2
 
 
 def ReadFemResp(dct_file='2002FemResp.dct',
@@ -126,7 +124,7 @@ def main():
 
     script: string script name
     """
-    # read and validate the respondent file
+    # readf and validate the respondent file
     resp = ReadFemResp()
 
     assert(len(resp) == 7643)
